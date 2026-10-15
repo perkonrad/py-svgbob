@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "svgbob"
+version = "0.7.6"
+description = "Pure Python port of svgbob: transform ascii diagrams into svg"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+svgbob-py = "svgbob.__main__:main"
+
+[tool.setuptools]
+packages = ["svgbob"]

@@ -1,0 +1,34 @@
+= svgbob sample
+:svgbob-stroke-width: 2
+
+== Blocks
+
+[[fig-box]]
+[%unbreakable]
+.A box with a label past its right edge
+[svgbob,fig-box,svg]
+....
++------+
+| box  |---> "a long label that svgbob would clip"
++------+
+....
+
+[svgbob]
+....
+  .---.     ,-.
+  | a |--->( b )
+  '---'     `-'
+....
+
+.From a file
+svgbob::diagram.bob[]
+
+[svgbob,fig-scaled,svg,scale=2,stroke-color=blue]
+....
+o--->*
+....
+
+[svgbob,fig-text,txt]
+....
++--+
+....
